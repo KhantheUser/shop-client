@@ -5,29 +5,8 @@ const TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOGIxZWZlYjNjNmZh
 export const publicRequest =  axios.create({
     baseURL : BASE_URL,
     // withCredentials : false,
-    headers: {
-        "Access-Control-Allow-Origin":
-          "https://wordle-react-project.netlify.app/",
-        "Access-Control-Allow-Methods": [
-          "POST",
-          "GET",
-          "OPTIONS",
-          "DELETE",
-          "PUT",
-        ],
-        "Access-Control-Allow-Headers": [
-          "append",
-          "delete",
-          "entries",
-          "foreach",
-          "get",
-          "has",
-          "keys",
-          "set",
-          "values",
-          "Authorization",
-        ],
-      },
+    
+      
 })
 
 export const userRequest = axios.create({
@@ -36,26 +15,7 @@ export const userRequest = axios.create({
     
     headers: {
         token : `Bearer ${TOKEN}`,
-        "Access-Control-Allow-Origin":
-          "https://wordle-react-project.netlify.app/",
-        "Access-Control-Allow-Methods": [
-          "POST",
-          "GET",
-          "OPTIONS",
-          "DELETE",
-          "PUT",
-        ],
-        "Access-Control-Allow-Headers": [
-          "append",
-          "delete",
-          "entries",
-          "foreach",
-          "get",
-          "has",
-          "keys",
-          "set",
-          "values",
-          "Authorization",
-        ],
+        
+        
       },
 })
