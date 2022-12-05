@@ -154,7 +154,7 @@ function Cart() {
         dispatch(quantityProduct(payload))
     }
     const handleCheckout = async(products)=>{
-
+        // console.log(products)
         const {data} = await userRequest.post(`${URL}checkout/payment`,products)
         
         window.location.href = data.data.url
